@@ -47,38 +47,44 @@ main {
     flex: 1;
     padding: 40px 0;
 }
-
-/* Header & Navigation */
-header {
-    background-color: #ffffff;
-    border-bottom: 1px solid #e0e0e0;
-    padding: 20px 0;
+/*Navigation  */
+.navbar {
+  background: #fff;
+  padding: 10px;
 }
 
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.navbar .logo img {
+  max-width: 70% !important;
 }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #1a1a1a;
-    text-decoration: none;
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-nav a {
-    color: #666666;
-    text-decoration: none;
-    margin-left: 20px;
-    font-weight: 500;
-    padding-bottom: 5px;
+.navbar .main-menu ul {
+  display: flex;
+  white-space: nowrap;
 }
 
-nav a:hover, nav a.active {
-    color: #0066cc;
-    border-bottom: 2px solid #0066cc;
+.navbar ul li a {
+  padding: 10px 20px;
+  display: block;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.navbar ul li a:hover {
+  color: var(--dark-colour);
+}
+
+.navbar ul li a i {
+  margin-right: 10px;
+}
+
+.navbar ul li:last-child a {
+  margin-left: 10px;
 }
 
 /* Page Components */
